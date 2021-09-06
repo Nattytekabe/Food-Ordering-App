@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTint="#f9f9f9"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TabHost
+            android:id="@+id/tbh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#1D345F" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/Food"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/Burimg"
+                                android:layout_width="match_parent"
+                                android:layout_height="253dp"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/burger"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <TextView
+                                android:id="@+id/burtxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:paddingStart="10dp"
+                                android:text="@string/burger"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textSize="48sp"
+                                android:textStyle="bold"
+                                android:typeface="monospace"
+                                tools:ignore="RtlSymmetry" />
+
+                            <TextView
+                                android:id="@+id/burdescrption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:paddingStart="15dp"
+                                android:text="@string/rolls_beef_steak_mince_olive_oil_ketchup_egg"
+                                android:textSize="15sp"
+                                tools:ignore="RtlSymmetry" />
+
+                            <TextView
+                                android:id="@+id/burprice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:paddingStart="15dp"
+                                android:text="@string/_120etb"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlSymmetry" />
+
+                            <Button
+                                android:id="@+id/burbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_to_cart" />
+
+                            <ImageView
+                                android:id="@+id/pizpic"
+                                android:layout_width="match_parent"
+                                android:layout_height="253dp"
+                                app:srcCompat="@drawable/pizza_1" />
+
+                            <TextView
+                                android:id="@+id/piztxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:text="@string/pizza"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textSize="48sp"
+                                android:paddingStart="10dp"
+                                android:textStyle="bold"
+                                android:typeface="monospace"
+                                tools:ignore="RtlSymmetry" />
+
+                            <TextView
+                                android:id="@+id/burdescrption2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:paddingStart="15dp"
+                                android:text="@string/ricotta_cheese_tomato_sauce_fresh_basil_pesto_fresh"
+                                android:textSize="15sp"
+                                tools:ignore="RtlSymmetry" />
+
+                            <TextView
+                                android:id="@+id/pizprice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:text="@string/_150etb"
+                                android:paddingStart="15dp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textSize="20sp"
+                                tools:ignore="RtlSymmetry" />
+
+                            <Button
+                                android:id="@+id/pizbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_to_cart" />
+
+                            <Button
+                                android:id="@+id/place"
+                                android:layout_width="374dp"
+                                android:layout_height="wrap_content"
+                                android:background="#FA0101"
+                                android:insetTop="0"
+                                android:insetBottom="0dp"
+                                android:text="@string/place_order"
+                                android:textAlignment="inherit"
+                                app:icon="@android:drawable/alert_dark_frame"
+                                app:iconPadding="0dp"
+                                app:iconTint="#00A33333" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Drink"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/dr1img"
+                                android:layout_width="match_parent"
+                                android:layout_height="253dp"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/nobackcoke"
+                                tools:ignore="ImageContrastCheck" />
+
+                            <TextView
+                                android:id="@+id/dr1txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:text="@string/coke"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textSize="48sp"
+                                android:textStyle="bold"
+                                android:typeface="monospace" />
+
+                            <TextView
+                                android:id="@+id/dr1price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:text="20ETB"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/dr1btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_to_cart" />
+
+                            <ImageView
+                                android:id="@+id/dr2pic"
+                                android:layout_width="match_parent"
+                                android:layout_height="253dp"
+                                android:contentDescription="@string/todo"
+                                app:srcCompat="@drawable/nobacksprite" />
+
+                            <TextView
+                                android:id="@+id/dr2txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:text="@string/sprite"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textSize="48sp"
+                                android:textStyle="bold"
+                                android:typeface="monospace" />
+
+                            <TextView
+                                android:id="@+id/dr2price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-black"
+                                android:text="@string/_120etb"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:id="@+id/dr2btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_to_cart" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </ScrollView>
+
+</RelativeLayout>

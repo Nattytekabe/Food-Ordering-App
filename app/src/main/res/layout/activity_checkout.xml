@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+
+    android:backgroundTint="#1D345F"
+    android:orientation="vertical"
+    tools:context=".Checkout">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:text="@string/orders"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="60dp"
+        android:hint="@string/items_here"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="#0C0C0C"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/priceView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center_horizontal"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        android:hint="@string/price_here"
+        android:textAlignment="center"
+        android:textColor="#090908"
+        android:textSize="15sp" />
+</LinearLayout>

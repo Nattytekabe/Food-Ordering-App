@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Megeb</string>
+    <string name="_150">$150</string>
+    <string name="pizza">Pizza</string>
+    <string name="toodo">TODO</string>
+
+    <string name="_130">$130</string>
+    <string name="grill_chicken">Grill chicken</string>
+
+    <string name="_120">$120</string>
+    <string name="burger">Burger</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_lg">lg</string>
+    <string name="rolls_beef_steak_mince_olive_oil_ketchup_egg">Rolls, beef steak mince, olive oil, ketchup, egg</string>
+    <string name="ricotta_cheese_tomato_sauce_fresh_basil_pesto_fresh">Ricotta cheese, tomato sauce, fresh basil pesto, fresh</string>
+    <string name="_150etb">150ETB</string>
+    <string name="_120etb">120ETB</string>
+    <string name="todo">TODO</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="coke">coke</string>
+    <string name="sprite">sprite</string>
+    <string name="place_order">Place Order</string>
+    <string name="orders">Orders</string>
+    <string name="items_here">items here</string>
+    <string name="price_here">price here</string>
+
+</resources>
